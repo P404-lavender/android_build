@@ -512,6 +512,13 @@ function lunch()
         return 1
     fi
 
+    if (echo -n $product | grep -q -e "^p404_") ; then
+        P404_BUILD=$(echo -n $product | sed -e 's/^p404_//g')
+    else
+        P404_BUILD=
+    fi
+    export P404_BUILD
+
     _lunch_meat $product $release $variant
 }
 

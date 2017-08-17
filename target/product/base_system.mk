@@ -477,7 +477,7 @@ PRODUCT_PACKAGES_DEBUG := \
     traceroute6 \
     unwind_info \
     unwind_reg_info \
-    unwind_symbols \
+    unwind_symbols
 
 # The set of packages whose code can be loaded by the system server.
 PRODUCT_SYSTEM_SERVER_APPS += \
